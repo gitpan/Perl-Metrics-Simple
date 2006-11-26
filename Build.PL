@@ -1,8 +1,8 @@
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/Build.PL,v 1.6 2006/10/03 03:53:08 matisse Exp $
-# $Revision: 1.6 $
+# $Header: /usr/local/CVS/Perl-Metrics-Simple/Build.PL,v 1.9 2006/11/24 16:29:07 matisse Exp $
+# $Revision: 1.9 $
 # $Author: matisse $
 # $Source: /usr/local/CVS/Perl-Metrics-Simple/Build.PL,v $
-# $Date: 2006/10/03 03:53:08 $
+# $Date: 2006/11/24 16:29:07 $
 ###############################################################################
 
 use Module::Build;
@@ -14,7 +14,10 @@ Module::Build->new(
     license     => 'perl',
     requires    => {
         'Readonly'            => 1.03,
-        'PPI'                 => 1.113,    
+        'PPI'                 => 1.113,
+        'Statistics::Basic'   => 0.42,
+        'Pod::Usage'          => 0,
     },
     build_requires => { 'Module::Build' => 0.2612, },
+    script_files   => { 'bin/countperl' => 1, },
 )->create_build_script;
