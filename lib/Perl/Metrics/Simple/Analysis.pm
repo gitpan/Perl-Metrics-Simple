@@ -1,8 +1,8 @@
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v 1.7 2006/11/26 18:36:14 matisse Exp $
-# $Revision: 1.7 $
+# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v 1.9 2006/12/02 17:06:50 matisse Exp $
+# $Revision: 1.9 $
 # $Author: matisse $
 # $Source: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v $
-# $Date: 2006/11/26 18:36:14 $
+# $Date: 2006/12/02 17:06:50 $
 ###############################################################################
 
 package Perl::Metrics::Simple::Analysis;
@@ -16,7 +16,7 @@ use Statistics::Basic::StdDev;
 use Statistics::Basic::Mean;
 use Statistics::Basic::Median;
 
-our $VERSION = '0.022';
+our $VERSION = '0.03';
 
 my %AnalysisData = ();
 my %Files        = ();
@@ -293,6 +293,8 @@ is for all the code in the file B<outside of> any named subroutines.
         main_stats => {
                         lines             => 23,
                         mccabe_complexity => 3,
+                        path              => '/path/to/file',
+                        name              => '{code not in named subroutines}',
                        },
         },
         ...
