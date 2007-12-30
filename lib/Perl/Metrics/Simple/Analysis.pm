@@ -1,8 +1,8 @@
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v 1.11 2007/11/22 18:21:56 matisse Exp $
-# $Revision: 1.11 $
+# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v 1.13 2007/12/30 21:37:32 matisse Exp $
+# $Revision: 1.13 $
 # $Author: matisse $
 # $Source: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v $
-# $Date: 2007/11/22 18:21:56 $
+# $Date: 2007/12/30 21:37:32 $
 ###############################################################################
 
 package Perl::Metrics::Simple::Analysis;
@@ -16,7 +16,7 @@ use Statistics::Basic::StdDev;
 use Statistics::Basic::Mean;
 use Statistics::Basic::Median;
 
-our $VERSION = '0.034';
+our $VERSION = '0.1';
 
 my %AnalysisData = ();
 my %Files        = ();
@@ -33,7 +33,7 @@ sub new {
         confess 'Did not supply an arryref of analysis data.';
     }
     my $self = {};
-    bless $self, ref $class || $class;
+    bless $self, $class;
     $self->_init($analysis_data);    # Load object properties
     return $self;
 }
@@ -110,8 +110,8 @@ sub _numerically {
 }
 
 sub _init {
-    my ( $self, $analysis_data ) = @_;
-    $AnalysisData{$self} = $analysis_data;
+    my ( $self, $file_objects ) = @_;
+    $AnalysisData{$self} = $file_objects;
 
     my @all_files  = ();
     my @packages   = ();
@@ -121,11 +121,11 @@ sub _init {
     my %main_stats = ( lines => 0, mccabe_complexity => 0 );
 
     foreach my $file ( @{ $self->data() } ) {
-        $lines                         += $file->lines;
-        $main_stats{lines}             += $file->main_stats->{lines};
+        $lines                         += $file->lines();
+        $main_stats{lines}             += $file->main_stats()->{lines};
         $main_stats{mccabe_complexity} +=
-          $file->main_stats->{mccabe_complexity};
-        push @all_files, $file->path;
+          $file->main_stats()->{mccabe_complexity};
+        push @all_files, $file->path();
         push @file_stats,
           { path => $file->path, main_stats => $file->main_stats };
         push @packages, @{ $file->packages };
@@ -138,7 +138,7 @@ sub _init {
     $Packages{$self}     = \@packages;
     $Lines{$self}        = $lines;
     $Subs{$self}         = \@subs;
-    $SummaryStats{$self} = $self->_make_summary_stats;
+    $SummaryStats{$self} = $self->_make_summary_stats();
     return 1;
 }
 
@@ -240,7 +240,7 @@ object.
 
 =head1 VERSION
 
-This is VERSION 0.031.
+This is VERSION 0.1
 
 =head1 DESCRIPTION
 
@@ -249,15 +249,15 @@ This is VERSION 0.031.
 
 =head2 new
 
-  $analysis = Perl::Metrics::Simple::Analsys->new( $array_of_data )
+  $analysis = Perl::Metrics::Simple::Analsys->new( \@file_objects )
 
-Takes an arrayref of data and returns a new  Perl::Metrics::Simple::Analysis
-object.
+Takes an arrayref of B<Perl::Metrics::Simple::Analysis::File> objects
+and returns a new Perl::Metrics::Simple::Analysis object.
 
 =head2 data
 
-The raw data for the analysis. This is the arryref you passed
-as athe argument to new();
+The raw data for the analysis. This is the arrayref you passed
+as the argument to new();
 
 =head2 files
 
@@ -342,7 +342,7 @@ Returns a data structure of the summary counts for all the files examined:
         sub_complexity  => {
             min           => $min_sub_complexity,
             max           => $max_sub_complexity,
-            sorted_values => \@complexitys_of_all_subs,
+            sorted_values => \@complexities_of_all_subs,
             mean          => $average_sub_complexity,
             median        => $median_sub_complexity,
             standard_deviation => $std_dev_for_sub_complexity,
@@ -350,7 +350,7 @@ Returns a data structure of the summary counts for all the files examined:
         main_complexity => {
             min           => $min_main_complexity,
             max           => $max_main_complexity,
-            sorted_values => \@complexitys_of_all_subs,
+            sorted_values => \@complexities_of_all_subs,
             mean          => $average_main_complexity,
             median        => $median_main_complexity,
             standard_deviation => $std_dev_for_main_complexity,
@@ -360,10 +360,10 @@ Returns a data structure of the summary counts for all the files examined:
 
 =head1 STATIC PACKAGE SUBROUTINES
 
-Utility subs used internally, but not harm in exposing them for now.
+Utility subs used internally, but no harm in exposing them for now.
 Call these with a fully-qualified package name, e.g.
 
-  Perl::Metrics::Simple::Analysis::is_ref($thing,$type)
+  Perl::Metrics::Simple::Analysis::is_ref($thing,'ARRAY')
 
 =head2 is_ref
 
