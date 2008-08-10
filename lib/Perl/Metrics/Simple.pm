@@ -1,8 +1,8 @@
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v 1.15 2007/12/30 21:37:31 matisse Exp $
-# $Revision: 1.15 $
+# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v 1.17 2008/07/19 22:07:06 matisse Exp $
+# $Revision: 1.17 $
 # $Author: matisse $
 # $Source: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v $
-# $Date: 2007/12/30 21:37:31 $
+# $Date: 2008/07/19 22:07:06 $
 ###############################################################################
 
 package Perl::Metrics::Simple;
@@ -20,7 +20,7 @@ use Perl::Metrics::Simple::Analysis;
 use Perl::Metrics::Simple::Analysis::File;
 use Readonly;
 
-our $VERSION = '0.1';
+our $VERSION = '0.11';
 
 Readonly::Scalar our $PERL_FILE_SUFFIXES => qr{ \. (:? pl | pm | t ) }xmi;
 Readonly::Scalar our $SKIP_LIST_REGEX    => qr{ \.svn | _darcs | CVS }xmi;
@@ -30,7 +30,7 @@ Readonly::Scalar my $DOT_FILE_REGEX      => qr/ \A [.] /xm;
 sub new {
     my ($class) = @_;
     my $self = {};
-    bless $self, ref $class || $class;
+    bless $self, $class;
     return $self;
 }
 
