@@ -1,8 +1,8 @@
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v 1.18 2008/08/10 16:31:31 matisse Exp $
-# $Revision: 1.18 $
+# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v 1.20 2009/05/02 16:20:58 matisse Exp $
+# $Revision: 1.20 $
 # $Author: matisse $
 # $Source: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v $
-# $Date: 2008/08/10 16:31:31 $
+# $Date: 2009/05/02 16:20:58 $
 ###############################################################################
 
 package Perl::Metrics::Simple;
@@ -20,7 +20,7 @@ use Perl::Metrics::Simple::Analysis;
 use Perl::Metrics::Simple::Analysis::File;
 use Readonly;
 
-our $VERSION = 0.12;
+our $VERSION = 0.13;
 
 Readonly::Scalar our $PERL_FILE_SUFFIXES => qr{ \. (:? pl | pm | t ) }xmi;
 Readonly::Scalar our $SKIP_LIST_REGEX    => qr{ \.svn | _darcs | CVS }xmi;
@@ -215,6 +215,8 @@ http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Metrics-Simple
     http://www.eigenstate.net/
 
 =head1 LICENSE AND COPYRIGHT
+
+Copyright (c) 2006-2009 by Eigenstate Consulting, LLC.
 
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.

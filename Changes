@@ -1,4 +1,9 @@
 Revision history for Perl module Perl::Metrics::Simple
+
+0.13 Mon May  4 08:25:51 PDT 2009
+  Fixed bug in report output in countperl.
+  Added Copyright notice in form suitable for Debian GNU/Linux. (per Ryan Niebur)
+
 0.12 Sun Aug 10 09:25:38 PDT 2008
   Added credits to 0.11 notes.
   Minor changes to README and documentation in Perl/Metrics/Simple.pm
