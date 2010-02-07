@@ -1,7 +1,7 @@
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/t/test_files/Perl/Code/Analyze/Test/Module.pm,v 1.7 2006/11/23 22:25:48 matisse Exp $
+# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/test_files/Perl/Code/Analyze/Test/Module.pm,v 1.7 2006/11/23 22:25:48 matisse Exp $
 # $Revision: 1.7 $
 # $Author: matisse $
-# $Source: /usr/local/CVS/Perl-Metrics-Simple/t/test_files/Perl/Code/Analyze/Test/Module.pm,v $
+# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/test_files/Perl/Code/Analyze/Test/Module.pm,v $
 # $Date: 2006/11/23 22:25:48 $
 ###############################################################################
 

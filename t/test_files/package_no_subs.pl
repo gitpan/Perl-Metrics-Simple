@@ -1,8 +1,8 @@
 #!/usr/bin/perl
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/t/test_files/package_no_subs.pl,v 1.4 2006/11/23 22:25:48 matisse Exp $
+# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/test_files/package_no_subs.pl,v 1.4 2006/11/23 22:25:48 matisse Exp $
 # $Revision: 1.4 $
 # $Author: matisse $
-# $Source: /usr/local/CVS/Perl-Metrics-Simple/t/test_files/package_no_subs.pl,v $
+# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/test_files/package_no_subs.pl,v $
 # $Date: 2006/11/23 22:25:48 $
 ###############################################################################
 

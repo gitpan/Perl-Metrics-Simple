@@ -1,6 +1,6 @@
 # $Revision: 1.3 $
 # $Author: matisse $
-# $Source: /usr/local/CVS/Perl-Metrics-Simple/Makefile.PL,v $
+# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/Makefile.PL,v $
 # $Date: 2007/12/30 21:37:30 $
 #
 # ex: set ts=8 sts=4 sw=4 tw=78 ft=perl expandtab :

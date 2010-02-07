@@ -1,7 +1,7 @@
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/t/more_test_files/main_subs_and_pod.pl,v 1.1 2008/03/15 18:07:51 matisse Exp $
+# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/more_test_files/main_subs_and_pod.pl,v 1.1 2008/03/15 18:07:51 matisse Exp $
 # $Revision: 1.1 $
 # $Author: matisse $
-# $Source: /usr/local/CVS/Perl-Metrics-Simple/t/more_test_files/main_subs_and_pod.pl,v $
+# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/more_test_files/main_subs_and_pod.pl,v $
 # $Date: 2008/03/15 18:07:51 $
 
 package main_subs_and_pod; # 1

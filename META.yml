@@ -1,11 +1,18 @@
 ---
 name: Perl-Metrics-Simple
-version: 0.13
+version: 0.14
 author: []
 abstract: 'Count packages, subs, lines, etc. of many files.'
 license: perl
 resources:
-  license: ~
+  license: http://dev.perl.org/licenses/
+build_requires:
+  Data::Dumper: 0
+  File::Spec: 0
+  Module::Build: 0.2612
+  Readonly: 1.03
+  Test::Pod: 1
+  Test::Pod::Coverage: 1.04
 requires:
   Carp: 0
   Data::Dumper: 0
@@ -18,26 +25,21 @@ requires:
   Statistics::Basic::Mean: 0
   Statistics::Basic::Median: 0
   Statistics::Basic::StdDev: 0
-build_requires:
-  Data::Dumper: 0
-  File::Spec: 0
-  Module::Build: 0.2612
-  Readonly: 1.03
-  Test::Pod: 1
-  Test::Pod::Coverage: 1.04
 recommends:
   Readonly::XS: 1.02
+configure_requires:
+  Module::Build: 0.35
 provides:
   Perl::Metrics::Simple:
     file: lib/Perl/Metrics/Simple.pm
-    version: 0.13
+    version: 0.14
   Perl::Metrics::Simple::Analysis:
     file: lib/Perl/Metrics/Simple/Analysis.pm
-    version: 0.11
+    version: 0.14
   Perl::Metrics::Simple::Analysis::File:
     file: lib/Perl/Metrics/Simple/Analysis/File.pm
-    version: 0.11
-generated_by: Module::Build version 0.32
+    version: 0.14
+generated_by: Module::Build version 0.35
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4

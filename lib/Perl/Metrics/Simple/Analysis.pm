@@ -1,8 +1,8 @@
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v 1.15 2009/05/02 16:21:00 matisse Exp $
-# $Revision: 1.15 $
+# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v 1.16 2010/02/07 20:59:07 matisse Exp $
+# $Revision: 1.16 $
 # $Author: matisse $
-# $Source: /usr/local/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v $
-# $Date: 2009/05/02 16:21:00 $
+# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v $
+# $Date: 2010/02/07 20:59:07 $
 ###############################################################################
 
 package Perl::Metrics::Simple::Analysis;
@@ -16,7 +16,7 @@ use Statistics::Basic::StdDev;
 use Statistics::Basic::Mean;
 use Statistics::Basic::Median;
 
-our $VERSION = '0.11';
+our $VERSION = '0.14';
 
 my %AnalysisData = ();
 my %Files        = ();

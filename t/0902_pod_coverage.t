@@ -1,8 +1,8 @@
 # -*- perl -*-
-# $Header: /usr/local/CVS/Perl-Metrics-Simple/t/0902_pod_coverage.t,v 1.1 2006/11/26 06:47:43 matisse Exp $
+# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/0902_pod_coverage.t,v 1.1 2006/11/26 06:47:43 matisse Exp $
 # $Revision: 1.1 $
 # $Author: matisse $
-# $Source: /usr/local/CVS/Perl-Metrics-Simple/t/0902_pod_coverage.t,v $
+# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/0902_pod_coverage.t,v $
 # $Date: 2006/11/26 06:47:43 $
 ###############################################################################
 
