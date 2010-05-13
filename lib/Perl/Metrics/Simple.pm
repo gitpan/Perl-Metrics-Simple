@@ -1,8 +1,8 @@
-# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v 1.21 2010/02/07 20:59:07 matisse Exp $
-# $Revision: 1.21 $
+# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v 1.23 2010/05/09 18:02:28 matisse Exp $
+# $Revision: 1.23 $
 # $Author: matisse $
 # $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple.pm,v $
-# $Date: 2010/02/07 20:59:07 $
+# $Date: 2010/05/09 18:02:28 $
 ###############################################################################
 
 package Perl::Metrics::Simple;
@@ -21,7 +21,7 @@ use Perl::Metrics::Simple::Analysis;
 use Perl::Metrics::Simple::Analysis::File;
 use Readonly;
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 Readonly::Scalar our $PERL_FILE_SUFFIXES => qr{ \. (:? pl | pm | t ) }sxmi;
 Readonly::Scalar our $SKIP_LIST_REGEX    => qr{ \.svn | \. git | _darcs | CVS }sxmi;
@@ -67,8 +67,8 @@ sub list_perl_files {
     my $wanted = sub {
         return if $self->should_be_skipped($File::Find::name);
         if ( $self->is_perl_file($File::Find::name) )
-        {    ## no critic ProhibitPackageVars
-            push @files, $File::Find::name;    ## no critic ProhibitPackageVars
+        {
+            push @files, $File::Find::name;  ## no critic (ProhibitPackageVars)
         }
     };
 
