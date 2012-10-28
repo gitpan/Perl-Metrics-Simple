@@ -1,8 +1,8 @@
 # -*- perl -*-
-# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/0901_pod.t,v 1.1 2006/11/26 06:47:43 matisse Exp $
+# $Header: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/t/0901_pod.t,v 1.1 2006/11/26 06:47:43 matisse Exp $
 # $Revision: 1.1 $
 # $Author: matisse $
-# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/0901_pod.t,v $
+# $Source: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/t/0901_pod.t,v $
 # $Date: 2006/11/26 06:47:43 $
 ###############################################################################
 

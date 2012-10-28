@@ -1,8 +1,8 @@
 # -*- perl -*-
-# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/001_load.t,v 1.3 2006/10/03 03:53:08 matisse Exp $
+# $Header: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/t/001_load.t,v 1.3 2006/10/03 03:53:08 matisse Exp $
 # $Revision: 1.3 $
 # $Author: matisse $
-# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/001_load.t,v $
+# $Source: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/t/001_load.t,v $
 # $Date: 2006/10/03 03:53:08 $
 ###############################################################################
 

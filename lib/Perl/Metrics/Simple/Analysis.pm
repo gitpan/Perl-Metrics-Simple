@@ -1,7 +1,7 @@
-# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v 1.18 2010/05/09 18:02:28 matisse Exp $
+# $Header: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v 1.18 2010/05/09 18:02:28 matisse Exp $
 # $Revision: 1.18 $
 # $Author: matisse $
-# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v $
+# $Source: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/lib/Perl/Metrics/Simple/Analysis.pm,v $
 # $Date: 2010/05/09 18:02:28 $
 ###############################################################################
 
@@ -16,7 +16,7 @@ use Statistics::Basic::StdDev;
 use Statistics::Basic::Mean;
 use Statistics::Basic::Median;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 my %_ANALYSIS_DATA = ();
 my %_FILES         = ();

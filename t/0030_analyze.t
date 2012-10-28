@@ -1,7 +1,7 @@
-# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/0030_analyze.t,v 1.19 2010/02/07 20:59:07 matisse Exp $
+# $Header: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/t/0030_analyze.t,v 1.19 2010/02/07 20:59:07 matisse Exp $
 # $Revision: 1.19 $
 # $Author: matisse $
-# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/t/0030_analyze.t,v $
+# $Source: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/t/0030_analyze.t,v $
 # $Date: 2010/02/07 20:59:07 $
 ###############################################################################
 

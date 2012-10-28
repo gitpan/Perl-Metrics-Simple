@@ -1,7 +1,7 @@
-# $Header: /Library/VersionControl/CVS/Perl-Metrics-Simple/Build.PL,v 1.15 2007/12/30 21:37:31 matisse Exp $
+# $Header: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/Build.PL,v 1.15 2007/12/30 21:37:31 matisse Exp $
 # $Revision: 1.15 $
 # $Author: matisse $
-# $Source: /Library/VersionControl/CVS/Perl-Metrics-Simple/Build.PL,v $
+# $Source: /Users/matisse/Desktop/CVS2GIT/matisse.net.cvs/Perl-Metrics-Simple/Build.PL,v $
 # $Date: 2007/12/30 21:37:31 $
 ###############################################################################
 use strict;
