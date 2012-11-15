@@ -16,7 +16,7 @@ use Statistics::Basic::StdDev;
 use Statistics::Basic::Mean;
 use Statistics::Basic::Median;
 
-our $VERSION = '0.16';
+our $VERSION = '0.17';
 
 my %_ANALYSIS_DATA = ();
 my %_FILES         = ();
@@ -378,9 +378,9 @@ None reported yet ;-)
 
 =over 4
 
-=item L<Readonly>
+=item L<Readonly|Readonly>
 
-=item L<Statistics::Basic>
+=item L<Statistics::Basic|Statistics::Basic>
 
 =back
 
